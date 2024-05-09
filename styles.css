@@ -1,8 +1,5 @@
 /* styles.css */
-body, html {
-    font-family: Arial, sans-serif;
-    padding: 0;
-    margin: 0;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,36 +7,29 @@ body, html {
     background-color: #f4f4f4;
 }
 
-.container {
-    text-align: center;
-    background: white;
+.calculator {
+    width: 200px;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-input {
-    margin: 10px;
-    padding: 10px;
-    width: calc(100% - 44px);
-    box-sizing: border-box;
-}
-
-button {
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.progress-bar {
+.calculator input {
     width: 100%;
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
+    height: 40px;
+    text-align: right;
+    margin-bottom: 10px;
 }
 
-.progress-fill {
-    height: 20px;
-    background-color: #76b852;
-    width: 0%;
-    transition: width 0.5s ease-in-out;
+.keys button {
+    width: 46px;
+    height: 46px;
+    margin: 2px;
+    font-size: 16px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
